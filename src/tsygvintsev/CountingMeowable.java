@@ -10,7 +10,7 @@ public class CountingMeowable implements Meowable {
 
     @Override
     public void meow() {
-        cat.meow(); // настоящий мяу
+        cat.meow();
         count++;
     }
 

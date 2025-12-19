@@ -1,6 +1,6 @@
 package tsygvintsev;
 
-public class Cat {
+public class Cat implements Meowable{
     private final String name;
 
     public Cat(String name) {
