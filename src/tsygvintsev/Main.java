@@ -12,6 +12,7 @@ public class Main {
     static void main(String[] args) {
         int choice;
         int taskNum;
+        int n;
 
         System.out.println("Для перехода обратно в меню и выхода вводите '-1'");
         do {
@@ -186,7 +187,7 @@ public class Main {
                         break;
                     case 6:
                         System.out.print("Введите количество элементов в очереди L1: ");
-                        int n = sc.nextInt();
+                        n = sc.nextInt();
                         if (n <= 0) {
                             System.out.println("Ошибка: очередь должна быть непустой.");
                             break;
