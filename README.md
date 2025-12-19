@@ -332,28 +332,31 @@
 ### Текст задачи
 Напечатать	в	обратном	порядке	элементы	непустой	очереди	L.
 ### Алгоритм решения
-    System.out.print("Введите количество элементов в очереди: ");
+    System.out.print("Введите количество элементов в очереди L1: ");
     int n = sc.nextInt();
     if (n <= 0) {
         System.out.println("Ошибка: очередь должна быть непустой.");
         break;
     }
 
-    Queue<Integer> queue = new LinkedList<>();
+    Queue<Integer> L1 = new LinkedList<>();
     System.out.println("Введите " + n + " целых чисел (через Enter):");
     for (int i = 0; i < n; i++) {
-        queue.add(sc.nextInt());
+        L1.add(sc.nextInt());
     }
 
     Stack<Integer> stack = new Stack<>();
-    while (!queue.isEmpty()) {
-        stack.push(queue.poll());
+    while (!L1.isEmpty()) {
+        stack.push(L1.poll());
     }
 
-    System.out.print("Элементы непустой очереди в обратном порядке: ");
+    Queue<Integer> L2 = new LinkedList<>();
     while (!stack.isEmpty()) {
-        System.out.print(stack.pop() + " ");
+        L2.add(stack.pop());
     }
+
+    System.out.println("Новая очередь L2 (обратный порядок): " + L2);
+
 
 # Задание 7
 ## Задача 1
